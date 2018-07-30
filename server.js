@@ -1,5 +1,5 @@
 const http = require('http');
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 function handleRequest(request, response) {
     const path = request.url;
